@@ -1,0 +1,25 @@
+
+/* Botón de Scroll */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Ocultar inicialmente */
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #1c86e6; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+#scrollToTopBtn i {
+    font-size: 18px;
+}

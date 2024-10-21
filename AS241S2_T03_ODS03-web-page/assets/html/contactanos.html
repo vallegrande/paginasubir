@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 3 - Salud y Bienestar</title>
+    <link rel="icon" href="/image/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/CSS/contactanos.css">
+    <link rel="stylesheet" href="/assets/css/contactanos.css">
+    <link rel="stylesheet" href="/assets/css/function/AS231S2_funcionalidad_1.css">
+    <link rel="stylesheet" href="/assets/css/function/AS231S2_funcionalidad_2.css">
+    <link rel="stylesheet" href="/assets/css/function/AS231S2_funcionalidad_3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+</head>
+<body>
+
+    <!-- Overlay de carga -->
+    <div id="loading-overlay">
+        <div class="loading-animation">
+            <div class="hexagon"></div>
+            <p>Cargando</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="/image/Logo.png" alt="Logo">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li><a href="/assets/html/principal.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="/assets/html/explorador.html"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                <li><a href="/assets/html/galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+                <li><a href="/assets/html/contribuir.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="/assets/html/contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                <li><a href="/login.html"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botón de scroll (volver arriba) -->
+    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Banner -->
+    <section class="banner">
+        <video autoplay muted loop class="banner-video">
+            <source src="/banners/contactanos.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-text">
+            <h1>ODS 3: Contactanos</h1>
+            <p>Promoviendo el bienestar para todos a todas las edades.</p>
+        </div>
+    </section>
+
+        <!-- Información del equipo -->
+        <section class="team-section">
+            <h3>Equipo de construcción</h3>
+            <h4>Somos estudiantes. Estudiamos Análisis de Sistemas en el Instituto Superior Tecnológico Vallegrande, y desarrollamos esta página web como parte de nuestro compromiso con la ODS 3: Salud y Bienestar.</h4>
+            <p>Nuestro objetivo es mejorar la calidad de vida a través de la tecnología, fomentando el bienestar y el acceso a información para una vida más saludable. Todos tenemos entre 17 y 18 años y estamos en el 2do semestre de la carrera, comprometidos a aprender y aplicar nuestras habilidades para hacer una diferencia en nuestra comunidad.</p>
+            <div class="team-section">
+                <h3>Nuestro Equipo</h3>
+                <h4>Conoce a los talentosos miembros de nuestro equipo</h4>
+                <div class="team-container">
+                    <div class="team-member">
+                        <img src="/partners/karla.jpg" alt="Karla Magallanes" class="profile-img">
+                        <h5>Karla Anyelí Magallanes Vicente</h5>
+                        <p>Estudiante de Análisis de Sistemas y entusiasta de la programación y el desarrollo web. Su pasión por aprender nuevas tecnologías la impulsa a utilizar la tecnología como una herramienta para transformar vidas y fomentar el bienestar en su comunidad. Siempre busca superar sus límites y dejar una huella positiva en el mundo.</p>
+                        <div class="social-links">
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/karla.magallanes.vicente%40vallegrande.edu.pe"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/904518286"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/partners/lucas.jpg" alt="Lucas Leyva" class="profile-img">
+                        <h5>Christopher Lucas Leyva Chumpitaz</h5>
+                        <p>Un innovador en el corazón, apasionado por la tecnología y el diseño de software. Su meta es crear soluciones que marquen la diferencia y se esfuerza constantemente por perfeccionar sus habilidades. Con un fuerte deseo de contribuir a proyectos significativos, es un verdadero catalizador de cambio.</p>
+                        <div class="social-links">
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/christopher.leyva.chumpitaz%40vallegrande.edu.pe"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/983006266"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/partners/luis.jpg" alt="Luis Mencia" class="profile-img">
+                        <h5>Luis Fernando Mencia Chipa</h5>
+                        <p>Apasionado desarrollador web que se dedica a crear aplicaciones útiles y accesibles para todos. Con un enfoque colaborativo y un deseo de aprender de sus colegas, se convierte en un miembro valioso del equipo. Con cada proyecto, busca no solo crecer profesionalmente, sino también inspirar a otros a alcanzar su máximo potencial.</p>
+                        <div class="social-links">
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/luis.mencia%40vallegrande.edu.pe"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/951146093"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </section>
+
+
+
+<script src="/assets/js/equipo.js"></script>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes sobre ODS 03</h2>
+            <div class="timeline">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <h3>¿Qué son los Objetivos de Desarrollo Sostenible (ODS)?</h3>
+                        <p>Los ODS son un conjunto de 17 objetivos globales establecidos por la Asamblea General de las Naciones Unidas para abordar los principales desafíos de desarrollo sostenible, incluyendo la pobreza, desigualdad, y el cambio climático. Cada uno de estos objetivos tiene metas específicas que se deben cumplir para mejorar la calidad de vida de las personas y proteger el planeta. La implementación de los ODS implica la colaboración de gobiernos, empresas, sociedad civil y ciudadanos para alcanzar un futuro sostenible.</p>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <h3>¿Qué es el ODS 03: Salud y Bienestar?</h3>
+                        <p>El ODS 03 busca garantizar una vida sana y promover el bienestar para todos en todas las edades. Incluye metas como reducir la mortalidad materna, acabar con las epidemias de enfermedades transmisibles y asegurar la cobertura sanitaria universal. Además, este objetivo enfatiza la importancia de la salud mental, el acceso a servicios de salud de calidad y la promoción de hábitos saludables a través de la educación. La meta es lograr una salud integral que incluya tanto el bienestar físico como el mental y social.</p>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <h3>¿Cómo puedo contribuir al ODS 03?</h3>
+                        <p>Todos podemos contribuir al ODS 03 promoviendo estilos de vida saludables, apoyando campañas de vacunación y educación sanitaria, y participando en iniciativas de salud comunitaria. Esto incluye adoptar una alimentación balanceada, realizar actividad física regularmente y cuidar de nuestra salud mental. Además, involucrarse en actividades de voluntariado que busquen mejorar la salud pública, como la organización de eventos de donación de sangre o talleres de educación en salud, son formas efectivas de hacer la diferencia en la comunidad. También se puede fomentar la creación de políticas locales que prioricen la salud y el bienestar, así como abogar por el acceso equitativo a servicios de salud para todos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Formulario de contacto -->
+        <section class="contact-section">
+            <div class="contact-form-container">
+                <h3>Contáctanos</h3>
+                <form id="contactForm" action="/assets/php/procesar_contacto.php" method="POST"> 
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <span class="error-message" id="nombre-error"></span>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="apellido" name="apellido" required>
+                            <span class="error-message" id="apellido-error"></span>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" id="telefono" name="telefono" required>
+                            <span class="error-message" id="telefono-error"></span>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="correo" name="correo" required>
+                            <span class="error-message" id="correo-error"></span>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <span class="error-message" id="mensaje-error"></span>
+                    </div>
+                
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+        
+
+
+
+        <!-- Los 17 ODS -->
+        </section>
+            <section class="ods-gallery">
+                <h2>Los 17  (ODS)</h2>
+                <div class="ods-grid">
+                    <div class="ods-item">
+                        <img src="/imgods/ods1.jpg" alt="ODS 1: Fin de la Pobreza">
+                        <div class="ods-details">
+                        <p>Erradicar la pobreza en todas sus formas y en todas partes.</p>
+                    </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods2.jpg" alt="ODS 2: Hambre Cero">
+                        <div class="ods-details">
+                        <p>Poner fin al hambre, lograr la seguridad alimentaria y mejorar la nutrición.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods3.jpg" alt="ODS 3: Salud y Bienestar">
+                        <div class="ods-details">
+                        <p>Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods4.jpg" alt="ODS 4: Educación de Calidad">
+                        <div class="ods-details">
+                        <p>Garantizar una educación inclusiva, equitativa y de calidad.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods5.jpg" alt="ODS 5: Igualdad de Género">
+                        <div class="ods-details">
+                        <p>Lograr la igualdad entre los géneros y empoderar a todas las mujeres y niñas.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods6.jpg" alt="ODS 6: Agua Limpia y Saneamiento">
+                        <div class="ods-details">
+                        <p>Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods7.jpg" alt="ODS 7: Energía Asequible y No Contaminante">
+                        <div class="ods-details">
+                        <p>Garantizar el acceso a una energía asequible, segura, sostenible y moderna para todos.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods8.jpg" alt="ODS 8: Trabajo Decente y Crecimiento Económico">
+                        <div class="ods-details">
+                        <p>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo, y el trabajo decente para todos.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods9.jpg" alt="ODS 9: Industria, Innovación e Infraestructura">
+                        <div class="ods-details">
+                        <p>Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible, y fomentar la innovación.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods10.jpg" alt="ODS 10: Reducción de las Desigualdades">
+                        <div class="ods-details">
+                        <p>Reducir la desigualdad en y entre los países.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods11.jpg" alt="ODS 11: Ciudades y Comunidades Sostenibles">
+                        <div class="ods-details">
+                        <p>Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods12.jpg" alt="ODS 12: Producción y Consumo Responsables">
+                        <div class="ods-details">
+                        <p>Garantizar modalidades de consumo y producción sostenibles.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods13.jpg" alt="ODS 13: Acción por el Clima">
+                        <div class="ods-details">
+                        <p>Adoptar medidas urgentes para combatir el cambio climático y sus efectos.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods14.jpg" alt="ODS 14: Vida Submarina">
+                        <div class="ods-details">
+                        <p>Conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos para el desarrollo sostenible.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods15.jpg" alt="ODS 15: Vida de Ecosistemas Terrestres">
+                        <div class="ods-details">
+                        <p>Gestionar sosteniblemente los bosques, luchar contra la desertificación, detener y revertir la degradación de las tierras, y detener la pérdida de biodiversidad.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods16.jpg" alt="ODS 16: Paz, Justicia e Instituciones Sólidas">
+                        <div class="ods-details">
+                        <p>Promover sociedades pacíficas e inclusivas para el desarrollo sostenible, proporcionar acceso a la justicia para todos y construir instituciones eficaces, responsables e inclusivas a todos los niveles.</p>
+                        </div>
+                    </div>
+                    <div class="ods-item">
+                        <img src="/imgods/ods17.jpg" alt="ODS 17: Alianzas para Lograr los Objetivos">
+                        <div class="ods-details">
+                        <p>Fortalecer los medios de implementación y revitalizar la alianza global para el desarrollo sostenible.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        <!-- Logotipo y Cierre -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>Este proyecto está diseñado por estudiantes del instituto superior tecnologico vallegrande</p>
+                    <p>Recursos proporcionados por la ONU</p>
+                </div>
+            </div>
+        </footer>
+
+</main>
+
+<script src="/assets/js/function/AS231S2_funcionalidad_1.js"></script>
+<script src="/assets/js/function/AS231S2_funcionalidad_2.js"></script>
+<script src="/assets/js/function/AS231S2_funcionalidad_3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script src="/assets/js/ods_info.js"></script>
+<script src="/assets/js/animacion_carga.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+});
+
+// Animación para hacer zoom a las imágenes de perfil al pasar el mouse
+const teamMembers = document.querySelectorAll('.team-member');
+
+teamMembers.forEach(member => {
+    member.addEventListener('mouseenter', () => {
+        member.querySelector('.profile-img').style.transform = 'scale(1.1)';
+    });
+    member.addEventListener('mouseleave', () => {
+        member.querySelector('.profile-img').style.transform = 'scale(1)';
+    });
+});
+
+
+</script>
+
+</body>
+</html>
